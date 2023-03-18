@@ -6,10 +6,13 @@ $ npm install
 
 # Running the app
 
-Config file: `./src/config.ts`
-There you can set up Mongo URI (default: `mongodb://localhost:27018`) and port (default: `3000`)
+Config file path: `./src/config.ts`. 
+There you can set up Mongo URI (field `mongoURI`; default: `mongodb://localhost:27018`) and application port (field `port`; default: `3000`).
+Also, you can configure used database (field `mongoDatabase`) and collection (`quizzesCollection`).
 
 ## Local
+
+Backend URL: `http://localhost:3000`
 
 ```bash
 # development
@@ -26,6 +29,10 @@ $ npm run start:prod
 ```
 
 ## Docker
+
+Backend URL: `http://localhost:80`<br />
+Mongo URL: `http://localhost:27018`
+
 ```bash
 $ docker compose up
 ```
